@@ -7,9 +7,15 @@ public class C02_IfElseStatements {
         // 2- Kullanicidan notunu alin 50 veya daha buyukse "sinifi gectin",
         // 50'den kucukse "maalesef kaldin" yazdirin.
 
-        Scanner scan1 = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen notunuzu giriniz");
-        double not= scan1.nextDouble();
+        double not= scan.nextDouble();
+
+        if (not>=50){
+            System.out.println("Sinifi gectin");
+        }else {
+            System.out.println("Maalesef kaldin");
+        }
 
     }
 }
